@@ -13,7 +13,6 @@ if(localStorage.getItem("save") == 1){
   Mango = localStorage.getItem("Mango")
   MangoInt = localStorage.getItem("MangoInt");
   MangoesPerSec = localStorage.getItem("MangoesPerSec");
-  window.alert("Save Loaded!");
 }
 else{
   Reset();
