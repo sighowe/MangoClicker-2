@@ -17,6 +17,7 @@ var TrueReset = function(){
   MangoInt = localStorage.getItem("MangoInt");
   MangoesPerSec = localStorage.getItem("MangoesPerSec");
   document.getElementById("MangoLabel").textContent = "You Have " + Mango + " Mangoes";
+  location.reload();
 }
 var AddMango = function(){
   Mango = +MangoInt + +Mango;
