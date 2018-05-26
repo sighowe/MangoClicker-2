@@ -1,6 +1,6 @@
 var Reset = function(){
   var Mango = 0;
-  var MangoInt= 1;
+  var MangoInt = 1;
   var MangoesPerSec = 0;
 }
 var AddMango = function(){
@@ -13,6 +13,7 @@ if(localStorage.getItem("save") == 1){
   Mango = localStorage.getItem("Mango")
   MangoInt = localStorage.getItem("MangoInt");
   MangoesPerSec = localStorage.getItem("MangoesPerSec");
+  document.getElementById("MangoLabel").textContent = "You Have " + Mango + " Mangoes";
 }
 else{
   Reset();
@@ -20,4 +21,5 @@ else{
   localStorage.setItem("Mango", 0);
   localStorage.setItem("MangoesPerSec", 0);
   localStorage.setItem("MangoInt", 1);
+  document.getElementById("MangoLabel").textContent = "You Have " + Mango + " Mangoes";
 }
