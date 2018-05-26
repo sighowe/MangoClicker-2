@@ -12,9 +12,14 @@ var TrueReset = function(){
   localStorage.setItem("MangoesPerSec", 0);
   localStorage.setItem("MangoInt", 1);
   document.getElementById("MangoLabel").textContent = "You Have " + Mango + " Mangoes";
+  Reset();
+  Mango = localStorage.getItem("Mango")
+  MangoInt = localStorage.getItem("MangoInt");
+  MangoesPerSec = localStorage.getItem("MangoesPerSec");
+  document.getElementById("MangoLabel").textContent = "You Have " + Mango + " Mangoes";
 }
 var AddMango = function(){
-  Mango += MangoInt;
+  Mango = +MangoInt + +Mango;
   localStorage.setItem("Mango", Mango);
   document.getElementById("MangoLabel").textContent = "You Have " + Mango + " Mangoes";
 }
