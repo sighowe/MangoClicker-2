@@ -11,25 +11,25 @@ var TrueReset = function(){
   localStorage.setItem("Mango", 0);
   localStorage.setItem("MangoesPerSec", 0);
   localStorage.setItem("MangoInt", 1);
-  document.getElementById("MangoLabel").textContent = "You Have " + Mango + " Mangoes";
+  document.getElementById("MangoLabel").textContent = "You have " + Mango + " Mangoes";
   Reset();
   Mango = localStorage.getItem("Mango")
   MangoInt = localStorage.getItem("MangoInt");
   MangoesPerSec = localStorage.getItem("MangoesPerSec");
-  document.getElementById("MangoLabel").textContent = "You Have " + Mango + " Mangoes";
+  document.getElementById("MangoLabel").textContent = "You have " + Mango + " Mangoes";
   location.reload();
 }
 var AddMango = function(){
   Mango = +MangoInt + +Mango;
   localStorage.setItem("Mango", Mango);
-  document.getElementById("MangoLabel").textContent = "You Have " + Mango + " Mangoes";
+  document.getElementById("MangoLabel").textContent = "You have " + Mango + " Mangoes";
 }
 if(localStorage.getItem("save") == 1){
   Reset();
   Mango = localStorage.getItem("Mango")
   MangoInt = localStorage.getItem("MangoInt");
   MangoesPerSec = localStorage.getItem("MangoesPerSec");
-  document.getElementById("MangoLabel").textContent = "You Have " + Mango + " Mangoes";
+  document.getElementById("MangoLabel").textContent = "You have " + Mango + " Mangoes";
 }
 else{
   Reset();
@@ -37,5 +37,5 @@ else{
   localStorage.setItem("Mango", 0);
   localStorage.setItem("MangoesPerSec", 0);
   localStorage.setItem("MangoInt", 1);
-  document.getElementById("MangoLabel").textContent = "You Have " + Mango + " Mangoes";
+  document.getElementById("MangoLabel").textContent = "You have " + Mango + " Mangoes";
 }
