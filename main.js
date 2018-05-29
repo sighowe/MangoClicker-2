@@ -33,6 +33,7 @@ document.getElementById("MangoLabel").textContent = "You have " + Mango + " Mang
 var TrueReset = function(){
   var Mango = 0;
   var MangoInt = 1;
+  var MangoesPerSec = 0;
   localStorage.setItem("save", 1);
   localStorage.setItem("Mango", 0);
   localStorage.setItem("MangoesPerSec", 0);
