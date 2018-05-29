@@ -34,9 +34,10 @@ document.getElementById("MangoLabel").textContent = "You Have " + Mango + " Mang
 //Call
 if(localStorage.getItem("save") == 1){
   Reset();
-  Mango = localStorage.getItem("Mango")
-  MangoInt = localStorage.getItem("MangoInt");
-  MangoesPerSec = localStorage.getItem("MangoesPerSec");
+  var Mango = +localStorage.getItem("Mango")
+  document.getElementById("MangoLabel").textContent = "You Have " + Mango + " Mangoes";
+  var MangoInt = +localStorage.getItem("MangoInt");
+  var MangoesPerSec = +localStorage.getItem("MangoesPerSec");
   document.getElementById("MangoLabel").textContent = "You have " + Mango + " Mangoes";
 }
 else{
