@@ -1,6 +1,6 @@
-  Mango = localStorage.getItem("Mango")
-  MangoInt = localStorage.getItem("MangoInt");
-  MangoesPerSec = localStorage.getItem("MangoesPerSec");
+var Mango = localStorage.getItem("Mango")
+var MangoInt = localStorage.getItem("MangoInt");
+var MangoesPerSec = localStorage.getItem("MangoesPerSec");
 var AddMango = function(){
   Mango = +MangoInt + +Mango;
   localStorage.setItem("Mango", Mango);
