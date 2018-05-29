@@ -27,9 +27,9 @@ var AddMango = function(){
 }
 Reset();
 document.getElementById("MangoLabel").textContent = "You Have " + Mango + " Mangoes";
-Mango = +localStorage.getItem("Mango");
-MangoInt = +localStorage.getItem("MangoInt");
-MangoesPerSec = +localStorage.getItem("MangoesPerSec");
+Mango = localStorage.getItem("Mango");
+MangoInt = localStorage.getItem("MangoInt");
+MangoesPerSec = localStorage.getItem("MangoesPerSec");
 document.getElementById("MangoLabel").textContent = "You Have " + Mango + " Mangoes";
 //Call
 if(localStorage.getItem("save") == 1){
